@@ -30,3 +30,32 @@ Link: https://openneuro.org/datasets/ds000114
 ```bash
 pip install -r requirements.txt
 python code/xmax/run_xmax.py
+
+
+
+
+spatiotemporal-fmri-detection/
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+│
+├── data/
+│   ├── raw/                # (optional: DO NOT upload full dataset)
+│   ├── processed/
+│   │   └── sample_subject/ # small demo subset
+│   └── description.md
+│
+├── code/
+│   ├── preprocessing/
+│   ├── glm/
+│   ├── xmax/
+│   ├── ymax/
+│   └── visualization/
+│
+├── outputs/
+│   ├── figures/
+│   └── tables/
+│
+└── docs/
+    └── workflow.png
