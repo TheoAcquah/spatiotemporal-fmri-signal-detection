@@ -1,0 +1,207 @@
+
+##############################################################
+# ONE
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-01 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+##############################################################
+# TWO
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-02 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+##############################################################
+# THREE
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-03 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+##############################################################
+# FOUR
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-04 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+
+
+
+##############################################################
+# FIVE
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-05 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+
+
+##############################################################
+# SIX
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-06 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+
+##############################################################
+# SEVEN
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-07 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+##############################################################
+# EIGTH
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-08 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+
+##############################################################
+# NINE
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-09 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
+
+
+
+##############################################################
+# TEN
+##############################################################
+docker run -ti --rm \
+  -v ~/documents/Test_Retest_FMRI/bids_dataset:/data:ro \
+  -v ~/documents/Test_Retest_FMRI/fmriprep_output:/out \
+  -v ~/documents/license.txt:/opt/freesurfer/license.txt \
+  -v ~/bids_filter.json:/bids_filter.json \
+  nipreps/fmriprep:latest \
+  /data /out participant \
+  --participant-label sub-10 \
+  --fs-license-file /opt/freesurfer/license.txt \
+  --bids-filter-file /bids_filter.json \
+  --output-spaces MNI152NLin2009cAsym:res-2 \
+  --skip_bids_validation \
+  --nthreads 8 --mem_mb 16000
+
+
+
